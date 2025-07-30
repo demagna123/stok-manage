@@ -3,6 +3,14 @@
 @section('content')
     <h1 style="text-align: center; margin-bottom: 20px;">Display of Categories</h1>
 
+
+    @if ($message = Session::get('succes'))
+        
+    <p style="color: green">
+        {{ $message }}
+    </p>
+        
+    @endif
     <table class="category-table">
         <thead>
             <tr>
